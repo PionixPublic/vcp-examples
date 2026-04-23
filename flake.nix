@@ -15,7 +15,10 @@
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
 
       # Nixpkgs instantiated for each system
-      nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; });
+      nixpkgsFor = forAllSystems (system: import nixpkgs { 
+        inherit system; 
+        config = { allowUnfree = true; };
+      });
     in
     {
       devShells = forAllSystems (system:
@@ -34,6 +37,7 @@
           default = pkgs.mkShell {
             buildInputs = [
               pythonEnv
+              pkgs.ngrok
             ];
 
             # Optional: Shell commands to run upon entering the environment

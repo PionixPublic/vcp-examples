@@ -1,0 +1,3 @@
+[submodule "steve"]
+	path = steve
+	url = git@github.com:steve-community/steve.git
