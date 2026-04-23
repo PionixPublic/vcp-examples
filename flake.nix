@@ -28,6 +28,7 @@
           # Define your Python environment
           pythonEnv = pkgs.python3.withPackages (ps: with ps; [
             aiohttp
+            ipykernel
             # You can add more packages here, e.g.,
             # requests
             # pytest

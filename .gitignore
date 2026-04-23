@@ -1,3 +1,4 @@
 .ipynb_checkpoints/
 /.direnv
 /venv/
+/notebooks/output
