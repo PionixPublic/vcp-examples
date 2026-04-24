@@ -64,5 +64,5 @@ The notebooks in the `notebooks/` directory provide code for managing a park of 
 
 ## 🔗 Resources
 
--   [Pionix Official Website](https://pionix.com)
--   [EVerest Project](https://everest.github.io)
+- [PIONIX Virtual Charger Park](https://www.pionix.com/products/virtual-charger-park)
+-   [EVerest Documentation](https://everest.github.io)
