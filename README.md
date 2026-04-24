@@ -53,8 +53,8 @@ To connect the Virtual Charger Park to a local backend, you can use the included
 ### 3. Running Examples
 The notebooks in the `notebooks/` directory provide code for managing a park of virtual chargers.
 
--   **[01-asynchronous-load-test-example.ipynb](notebooks/01-asynchronous-load-test-example.ipynb)**: Demonstrates how to use `aiohttp` to simultaneously authorize, plug in, and start charging on multiple VCP instances.
--   **[02-vcp-configuration-generator.ipynb](notebooks/02-vcp-configuration-generator.ipynb)**: Shows how to programmatically generate CSV configuration templates for bulk-creating a diverse fleet of virtual chargers.
+-   **[01-asynchronous-load-test-example.ipynb](notebooks/01-asynchronous-load-test-example.ipynb)** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PionixPublic/vcp-examples/blob/main/notebooks/01-asynchronous-load-test-example.ipynb): Demonstrates how to use `aiohttp` to simultaneously authorize, plug in, and start charging on multiple VCP instances.
+-   **[02-vcp-configuration-generator.ipynb](notebooks/02-vcp-configuration-generator.ipynb)** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PionixPublic/vcp-examples/blob/main/notebooks/02-vcp-configuration-generator.ipynb): Shows how to programmatically generate CSV configuration templates for bulk-creating a diverse fleet of virtual chargers.
 
 ## 📖 Key Concepts
 
