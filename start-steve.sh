@@ -107,8 +107,10 @@ fi
 
 log_success "Steve is running and exposed!"
 echo -e "----------------------------------------------------"
-echo -e "${GREEN}Public URL:${NC} ${NGROK_URL}/steve/manager"
-echo -e "${GREEN}Local URL: ${NC} http://localhost:8180/steve/manager"
+echo -e "${GREEN}Public URL:${NC}       ${NGROK_URL}/steve/manager"
+echo -e "${GREEN}Local URL:${NC}        http://localhost:8180/steve/manager"
+echo -e "${GREEN}WebSocket URL:${NC}    ${NGROK_URL/https/wss}/steve/websocket/CentralSystemService"
+echo -e "${GREEN}Credentials:${NC}      admin / 1234"
 echo -e "----------------------------------------------------"
 echo -e "${YELLOW}Logs:${NC} docker compose -f steve/docker-compose.yml logs -f"
 echo -e "${YELLOW}Stop:${NC} kill $NGROK_PID && docker compose -f steve/docker-compose.yml down"
