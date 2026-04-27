@@ -56,6 +56,21 @@ else
     docker compose up -d
 fi
 
+# Wait for Steve to become healthy
+log_info "Waiting for Steve to become ready..."
+STEVE_MAX_RETRIES=60
+STEVE_COUNT=0
+until curl -sf http://localhost:8180/steve/manager > /dev/null 2>&1; do
+    if [ $STEVE_COUNT -ge $STEVE_MAX_RETRIES ]; then
+        log_err "Steve did not become ready in time."
+        docker compose logs --tail=20
+        exit 1
+    fi
+    sleep 1
+    STEVE_COUNT=$((STEVE_COUNT + 1))
+done
+log_success "Steve is ready."
+
 # 3. Start Ngrok
 log_info "Exposing Steve (port 8180) via ngrok..."
 # Start ngrok in background
